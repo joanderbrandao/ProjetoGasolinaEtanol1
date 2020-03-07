@@ -2,42 +2,55 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/edVlgasolina"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:visibility="visible"
-    tools:context=".MainActivity"
-    tools:visibility="visible">
+    android:animationCache="false"
+    android:background="#D8ABAB"
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/edvlrgasolina"
-        android:layout_width="190dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="16dp"
-        android:text="valor da gasolina"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <EditText
+        android:id="@+id/Gasolina"
+        android:layout_width="265dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="#935757"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Etanol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.169" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/edVlretanol"
-        android:layout_width="189dp"
-        android:layout_height="44dp"
-        android:text="valor do etanol"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="218dp" />
+    <EditText
+        android:id="@+id/Etanol"
+        android:layout_width="245dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="#935757"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Gasolina" />
 
     <Button
-        android:id="@+id/btnCalcular"
-        android:layout_width="85dp"
-        android:layout_height="43dp"
+        android:id="@+id/calcular"
+        android:layout_width="151dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="128dp"
+        android:backgroundTint="#5E4242"
         android:text="Calcular"
-        tools:layout_editor_absoluteX="186dp"
-        tools:layout_editor_absoluteY="312dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

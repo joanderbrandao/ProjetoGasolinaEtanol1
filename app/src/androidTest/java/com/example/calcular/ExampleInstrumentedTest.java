@@ -1,4 +1,4 @@
-package br.com.unipac.aulacombustivel;
+package com.example.calcular;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("br.com.unipac.aulacombustivel", appContext.getPackageName());
+        assertEquals("com.example.calcular", appContext.getPackageName());
     }
 }

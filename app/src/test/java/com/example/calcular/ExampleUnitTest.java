@@ -1,4 +1,4 @@
-package br.com.unipac.aulacombustivel;
+package com.example.calcular;
 
 import org.junit.Test;
 
